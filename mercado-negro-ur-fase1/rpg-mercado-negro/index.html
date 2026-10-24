@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercado Negro UR</title>
+  <meta name="description" content="Buscador de talentos de rango Deidad UR: mercado negro, equipo y generador de nombres.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo">◈</span>
+      <div>
+        <h1>Mercado Negro UR</h1>
+        <small>Buscador de talentos · Fase 1</small>
+      </div>
+    </div>
+    <div class="wallet">
+      <div class="coin"><span>Paradios</span><strong id="w-paradios">0</strong></div>
+      <div class="coin"><span>Oro</span><strong id="w-oro">0</strong></div>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-act="tab" data-tab="mercado" class="active">Mercado negro</button>
+    <button data-act="tab" data-tab="equipo">Equipo <span id="badge-equipo" class="count">0</span></button>
+    <button data-act="tab" data-tab="nombres">Nombres</button>
+    <button data-act="tab" data-tab="ajustes">Ajustes y datos</button>
+  </nav>
+
+  <main>
+    <section id="view-mercado" class="view"></section>
+    <section id="view-equipo" class="view hidden"></section>
+    <section id="view-nombres" class="view hidden"></section>
+    <section id="view-ajustes" class="view hidden"></section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-x" data-act="cerrar" aria-label="Cerrar">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="js/util.js"></script>
+  <script src="js/elementos.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/nombres.js"></script>
+  <script src="js/generador.js"></script>
+  <script src="js/tsv.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
